@@ -1,7 +1,7 @@
 # raspi-wireless-router
  Use your Raspberry PI as a wireless router on Ubuntu server
 ## Deploy
-After modified the file deploy.sh according to your case, the run:
+After modified the file deploy.sh according to your case, then run:
 ```
 sudo sh ./deploy.sh"
 ```
