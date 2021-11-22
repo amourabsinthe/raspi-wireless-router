@@ -119,3 +119,8 @@ START_FIREHOL=YES
 WAIT_FOR_IFACE=""
 FIREHOL_ESTABLISHED_ACTIVATION_ACCEPT=0
 ```
+
+**6. Enable ip forwording**
+```
+sudo echo "net.ipv4.ip_forward=1" > /etc/sysctl.conf
+```

@@ -110,9 +110,12 @@ ${SP}policy accept\n\
 router lan2wan inface llan outface wlan\n\
 ${SP}protection bad-packets\n\
 ${SP}route all accept"
-LOCATION=/etc/default/firehol.conf
+LOCATION=/etc/firehol/firehol.conf
 echo "${YELLOW}deploys ${LOCATION}"
 sudo printf "$CONTENT" > $LOCATION
+
+echo "${YELLOW}enables ip forwarding"
+sudo echo "net.ipv4.ip_forward=1" > /etc/sysctl.conf
 
 echo "${YELLOW}enables services:"
 sudo systemctl enable dnsmasq
