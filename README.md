@@ -17,7 +17,7 @@ SUBSYSTEM=="net", ACTION=="add", ATTR{address}=="MACADDR", NAME="wlan"
 SUBSYSTEM=="net", ACTION=="add", ATTR{address}=="MACADDR", NAME="llan"
 ```
 
-**2. Network setting on ubuntu server**
+**2. Network setting**
 
 ```
 # file: 50-cloud-init.yaml
